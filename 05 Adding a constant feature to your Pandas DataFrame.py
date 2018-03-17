@@ -16,6 +16,12 @@ print("Before adding constant feature")
 print(test_df)
 
 print("*******************************************")
-test_df= test_df.assign(dataset='training')
+test_df_new= test_df.assign(dataset='training')
 print("After adding constant feature")
-print(test_df)
+print(test_df_new)
+
+
+print("*******************************************")
+df_col_merged =pd.concat([test_df, test_df_new], axis=0)
+print("The merged datasframe columnwise: ")
+print(df_col_merged)
