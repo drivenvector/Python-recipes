@@ -1,0 +1,10 @@
+# Create dictionary
+my_dict = {'name': 'saurabh', 'age': 27, 'address': 'pune'}
+
+print(my_dict)
+
+# Rename the old key 
+# dict[new_value] = dict.pop(old_value, some_default_value)
+
+my_dict['location'] = my_dict.pop('address', 'India')  # India is some default value
+
