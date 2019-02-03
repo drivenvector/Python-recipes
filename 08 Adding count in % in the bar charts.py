@@ -24,6 +24,7 @@ for i in ax.patches:
     #ax.text(i.get_x()-.03, i.get_height()+.5, \
      #       str(round((i.get_height()/total)*100, 2))+'%', fontsize=15,
       #          color='dimgrey')
+      # Decreasing the i.get_x()+.12 will shift the text to left side and decreasing the i.get_height()-14 will bring the text down
     ax.text(i.get_x()+.12, i.get_height()-14, \
             str(round((i.get_height()/total)*100, 2))+'%', fontsize=22,
                 color='white')
